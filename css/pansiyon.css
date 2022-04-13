@@ -1,0 +1,205 @@
+@import url(reset_ders.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body{
+    background-color: #EEEEEE;
+}
+.resim{
+    display: flex;
+    margin-left: 34%;
+    margin-top: 10px;
+    flex-direction: row;
+    position: absolute;
+    gap: 495px;
+}
+.meb,.dcfl{
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s;
+}
+.meb:hover,.dcfl:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.header{
+    margin: auto;
+    background: rgb(79,108,150);
+    background: linear-gradient(90deg, rgba(79,108,150,0.96) 0%, rgba(91,125,177,0.9556197478991597) 47%, rgba(103,131,175,0.96) 100%);
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    display: block;
+}
+.header .bk h4,h5{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 10px;
+    color: #EEEEEE;
+    font-family: 'Open Sans',sans-serif;
+}
+.header .bk h4{
+    font-size: 20px;
+}
+.header .islem{
+    display: flex;
+    gap: 50px;
+    margin-top: 1%;
+    margin-left: 29%;
+}
+
+.header .islem button:hover{
+    background-color: rgb(79,108,150);
+    transform: scale(1.05);
+    transition: all 0.5s;
+    border-radius: 5px 5px 0 0;
+}
+
+.header .islem button{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(79,108,150);
+    border: none;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-size: 15px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.header .islem button .daha{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+abbr{
+    text-decoration: none;
+}
+.header .islem button ul{
+    position: absolute;
+    background-color: rgb(79,108,150);
+    width: 150px;
+    border-radius: 0  2px 2px 2px;
+    visibility: hidden;
+    transition: all 0.5s;
+    margin-left: -6px;
+}
+.header .islem button ul li{
+    margin-bottom: 2px;
+    margin-top: 3px;
+    padding: 2px;
+    font-size: 15px;
+}
+.header .islem button ul li:hover{
+    background-color: rgb(64, 86, 117);
+    font-size: 17px;
+    transition: all 0.5s;
+}
+.header .islem button:hover ul{
+    visibility: visible;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header .islem button .daha{
+    width: 25px;
+}
+.header .islem button:hover {
+    background-color: rgb(64, 86, 117);
+    border-radius: 5px 5px 5px 5px;
+}
+.area{
+    padding-top: 10%;
+    font-family: 'Open Sans',sans-serif;
+}
+.bilgi{font-size: 30px;text-align: center;}
+.dosyalar{
+    display: flex;
+    background-color: #dddddd;
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 15px;
+    gap: 100px;
+    justify-content: space-around;
+}
+.dosyalar div{width: 500px;height: 350px;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    margin-top: 25px;
+    border-radius: 15px;
+
+    }
+.dosya1 p{margin-top: 10px;margin-left: 5px;font-size: 25px;font-weight: lighter;text-align: center;}
+.dosya1 button{
+    width: 150px;
+    height: 75px;
+    background-color: #CA965C;
+    margin-top: 40px;
+    margin-left: 35%;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+.dosya1 button:hover{
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);}
+
+.dosya2 p{margin-top: 10px;margin-left: 5px;font-size: 25px;font-weight: lighter;text-align: center;}
+.dosya2 button{
+    width: 150px;
+    height: 75px;
+    background-color: #5584AC;
+    margin-top: 40px;
+    margin-left: 35%;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+.dosya2 button:hover{
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);}
+
+.dosya3 p{margin-top: 10px;margin-left: 5px;font-size: 25px;font-weight: lighter;text-align: center;}
+.dosya3 button{
+    width: 150px;
+    height: 75px;
+    background-color: #5F7464;
+    margin-top: 40px;
+    margin-left: 35%;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+    color: #f5f5f5;
+    font-size: 20px;
+}
+.dosya3 button:hover{
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);}
+
+.alt{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    text-align: center;
+    color: whitesmoke;
+    margin: auto;
+    bottom: 0;
+    font-size: 20px;
+}

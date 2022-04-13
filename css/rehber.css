@@ -1,0 +1,136 @@
+@import url(reset_ders.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body{
+    background-color: #EEEEEE;
+}
+.resim{
+    display: flex;
+    margin-left: 34%;
+    margin-top: 10px;
+    flex-direction: row;
+    position: absolute;
+    gap: 495px;
+}
+.meb,.dcfl{
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s;
+}
+.meb:hover,.dcfl:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.header{
+    margin: auto;
+    background: rgb(79,108,150);
+    background: linear-gradient(90deg, rgba(79,108,150,0.96) 0%, rgba(91,125,177,0.9556197478991597) 47%, rgba(103,131,175,0.96) 100%);
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    display: block;
+}
+.header .bk h4,h5{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 10px;
+    color: #EEEEEE;
+    font-family: 'Open Sans',sans-serif;
+}
+.header .bk h4{
+    font-size: 20px;
+}
+.header .islem{
+    display: flex;
+    gap: 50px;
+    margin-top: 1%;
+    margin-left: 25%;
+}
+
+.header .islem button:hover{
+    background-color: rgb(79,108,150);
+    transform: scale(1.05);
+    transition: all 0.5s;
+    border-radius: 5px 5px 0 0;
+}
+
+.header .islem button{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(79,108,150);
+    border: none;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-size: 15px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.header .islem button .daha{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+abbr{
+    text-decoration: none;
+}
+.header .islem button ul{
+    position: absolute;
+    background-color: rgb(79,108,150);
+    width: 150px;
+    border-radius: 0  2px 2px 2px;
+    visibility: hidden;
+    transition: all 0.5s;
+    margin-left: -6px;
+}
+.header .islem button ul li{
+    margin-bottom: 2px;
+    margin-top: 3px;
+    padding: 2px;
+    font-size: 15px;
+}
+.header .islem button ul li:hover{
+    background-color: rgb(64, 86, 117);
+    font-size: 17px;
+    transition: all 0.5s;
+}
+.header .islem button:hover ul{
+    visibility: visible;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header .islem button .daha{
+    width: 25px;
+}
+.header .islem button:hover {
+    background-color: rgb(64, 86, 117);
+    border-radius: 5px 5px 5px 5px;
+}
+.area{
+    padding-top: 10%;
+    font-family: 'Open Sans',sans-serif;
+    color: black;
+}
+.area p{
+    font-size: 19px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.area h4{font-size: 28px;padding-left: 5px;margin-bottom: 10px;}
+.area .ilke{list-style-type: square;margin-left: 30px;margin-top: 20px;}
+.area .ilke li{margin-bottom: 10px;font-size: 18px;}
+.alt{
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    text-align: center;
+    color: whitesmoke;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 5px;
+}
