@@ -1,225 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(reset.css);
 
-/** Reset Kısmı*/
-* {
-    box-sizing: border-box;
-  }
-.mobil{display: none;}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    scroll-behavior: smooth;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}   
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+.content{display: flex;justify-content: space-around;width: 100%;height: 200px;background-color: #8E3200;color: #fff;text-align: center;font-size: 50px;align-items: center;font-family: 'Roboto', sans-serif;}
+.content ::selection{background-color: #fff;}
+.content h5{font-size: 45px}
+.component{background-color: #fff;font-family: 'Roboto', sans-serif;padding: 30px;}
+.component h3{font-size: 30px;text-align: center;}
+.kenar_1{display: flex;justify-content: center;}
+.component input{width: 400px;height: 50px;margin: 10px;font-size: 30px;margin-bottom: 100px;}
+.kenar_2{display: flex;justify-content: center;}
+input::placeholder{color: #8E3200;}
+.buton{display: flex;justify-content: center;}
+button{width: 200px;height: 75px;background-color: #8E3200;border: none;font-size: 20px;color: #fff;cursor: pointer;transition: .5s;}
+button:hover{background-color: #A64B2A;}
+.sonuc h2{text-align: center;margin-top: 50px;font-size: 35px;}
+.sonuc #sonuc{text-align: center;font-size: 35px;margin-top: 50px;}
 
-/*? Entry Part Kısmı*/
-.entry-part {
-    background-image: url("img/s-7ebf4290d8ad327dec21613987b1397197d11408.gif");
-    background-color: #cccccc;
-    height: 950px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Open Sans', sans-serif;
-}
-.entry-part img{width: 275px;height: 125px;}
-.component{margin: 50px;display: table;}
-.component a{color: #f5f5f5;text-decoration: none;font-size: 30px;margin-right: 30px;}
-.component a:hover{color: #dddddd}
-
-/*! Content Kısmı*/
-.content{
-    width: 100%;
-    background-color: #ffffff;
-    height: 3500px;
-    padding-top: 200px;
-    scroll-snap-type: mandatory y;
-}
-.component img{width: 30px;height: auto;vertical-align: middle;}
-.content .information{width: auto;height: 500px;display: flex;text-align: center;position: relative;line-height: 40px;margin: 0 auto 0 auto;}
-.content .information .yazi{
-width: 50%;
-margin-top: 60px;
-}
-.information img{margin-top: 60px;scroll-snap-align: start;}
-.content .yazi h1{font-size: 50px;font-family: 'Open Sans', sans-serif;}
-.content .yazi p{font-size: 25px;font-family: 'Open Sans', sans-serif;}
-hr{margin: 10px;}
-
-.iletisim{margin-top: 300px;width: 100%;height: 450px;background-color: #c80b0f;color: #f5f5f5;padding: 10px 0 10px 0;font-family: 'Open Sans', sans-serif;}
-.iletisim .yazi h1{text-align: center;}
-.--tel {padding: 30px;font-size: 25px;}
-.--tel img{width: 30px;height: 30px;line-height: 10px;margin-right: 5px;}
-.--fax {padding: 30px;font-size: 25px;}
-.--fax img{width: 30px;height: 30px;line-height: 10px;margin-right: 5px;}
-.--loc {padding: 30px;font-size: 25px;}
-.--loc img{width: 30px;height: 30px;line-height: 10px;margin-right: 5px;}
-
-.hakkinda img{margin-top: 60px;}
-.content .yazi h1{padding: 10px;font-size: 50px;font-family: 'Open Sans', sans-serif;text-align: center}
-.content .yazi p{padding: 15px;font-size: 25px;font-family: 'Open Sans', sans-serif;}
-hr{margin: 10px;}
-.hakkinda{margin-top: 300px;width: 100%;height: 450px;background-color: #333333;color: #f5f5f5;padding: 10px 0 10px 0;font-family: 'Open Sans', sans-serif;}
-.hakkinda h2{font-size: 30px;padding-left: 10px;color: #e90d10;}
-.hakkinda p{font-weight: lighter}
-
-.sss img{margin-top: 60px;}
-.content .yazi h1{padding: 10px;font-size: 50px;font-family: 'Open Sans', sans-serif;}
-.content .yazi p{padding: 15px;font-size: 25px;font-family: 'Open Sans', sans-serif;}
-hr{margin: 10px;}
-.sss h1{text-align: center;}
-.sss{margin-top: 300px;width: 100%;height: 450px;background-color: #ffffff;color: #333333;padding: 10px 0 10px 0;font-family: 'Open Sans', sans-serif;border: 3px dashed;}
-.sss h2{font-size: 30px;padding-left: 10px;color: #e90d10;}
-.sss p{font-weight: lighter}
-
-.foot{margin-top: 100px;font-family: 'Open Sans', sans-serif;}
-.foot .social{width: 100%;height: 100px;padding-top: 10px;}
-.-one{background-color: #333333;width: 100%;height: 200px;text-align: center;color: #dddddd;font-weight: bold;}
-.-one h1{font-size: 30px;margin-bottom: 10px;}
-.-two{background-color: #111111; width: 100%;height: 300px;}
-.-two{display: flex;justify-content: center;}
-.-two .cont{color: #bdbdbd;font-size: 20px;}
-.-two ul li{color: #a2a2a2;line-height: 20px;font-size: 15px;}
-.-two ul{margin-top: 20px;margin-right: 20px;}
-.-three{background-color: #010101;width: 100%;height: 100px;display: flex;justify-content: space-between;}
-.copy{padding-top:50px;padding-left: 20px;}
-.copy b{color: #878787;font-size: 15px;font-weight: bolder;}
-.copy span{color: #646464;font-size: 12.5px;}
-
-.-three .politicas{color: #FFFFFF;padding-top: 50px;padding-right: 20px;}
-
-.gecersiz{display: none;}
-
-/*! Ekran Çözünürlük Ayarları*/
-/*? Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 0) and (max-width:991px) {
-
-    .content{overflow: hidden;height: auto;}
-    .component img{margin: 20px;}
-    .--tk{
-        display: none;
-    }
-    .component{margin: 30px;}
-    .mobil{display: block;}
-    input{display: none;}
-    .acilir_menu{width: 300px;height: 500px;background-color: #333333;position: fixed;top: 0;left: 0;opacity: 0.95;display: none;border-radius: 0 0 50px 0;transform: translateX(-1000px);transition: 5s all;}
-    .acilir_menu .baslik{display: flex;justify-content: space-between;padding: 20px;}
-    .acilir_menu .baslik h1{color: #f5f5f5;font-size: 30px;padding: 20px; }
-    #acil:checked ~ .acilir_menu{display: block;transform: translateX(0); transition: 5s all ;}
-    .acilir_menu .icerik{width: 100%;height: 100%;padding: 10px;color: #f5f5f5; font-size: 16px;}
-    .acilir_menu .icerik a{display: block;padding: 5px;}
-    .acilir_menu .icerik a:hover{color: #dddddd;}
-
-    .content .information{width: auto;height: auto;text-align: center;position: relative;line-height: 40px;margin: 0 auto 0 auto;display: flex;flex-direction: column;padding-left: 100px;}
-    .content .information .yazi{
-    width: 100%;
-    margin-top: 60px;
-    }
-    .information img{margin-top: 60px;width: 100px;height: 100px;}
-    .content .yazi h1{font-size: 30px;font-family: 'Open Sans', sans-serif;}
-    .content .yazi p{font-size: 20px;font-family: 'Open Sans', sans-serif;}
-    hr{margin: 10px;}
-
-    .iletisim{height: auto;}
-    .hakkinda{height:auto;}
-
-    .sss{margin-top: 30px;height: auto;margin-bottom: 30px;}
-
-    .-two{font-size: 16px;flex-wrap: wrap;height: auto;}
-    .-three{text-align: center;}
-    .politicas{font-size: 11px;}
-
-}
-
-/*? Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-    .content{overflow: hidden;height: auto;}
-
-
-    .content .information{width: auto;height: auto;text-align: center;position: relative;line-height: 40px;margin: 0 auto 0 auto;display: flex;flex-direction: column;}
-    .content .information .yazi{
-    width: 100%;
-    margin-top: 60px;
-    }
-    .information img{margin-top: 60px;width: 200px;height: 200px;}
-    .content .yazi h1{font-size: 40px;font-family: 'Open Sans', sans-serif;}
-    .content .yazi p{font-size: 20px;font-family: 'Open Sans', sans-serif;}
-    hr{margin: 10px;}
-
-    .iletisim{height: auto;}
-    .hakkinda{height:auto;}
-
-    .sss{margin-top: 30px;height: auto;margin-bottom: 30px;}
-
-    .-two{font-size: 16px;flex-wrap: wrap;height: auto;}
-    .-three{text-align: center;}
-    .politicas{font-size: 11px;}
-}
-
-/*? Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1499px) {
-
-    .content{overflow: hidden;height: auto;}
-
-
-    .content .information{width: auto;height: auto;text-align: center;position: relative;line-height: 40px;margin: 0 auto 0 auto;display: flex;flex-direction: column;}
-    .content .information .yazi{
-    width: 100%;
-    margin-top: 60px;
-    }
-    .information img{margin-top: 60px;width: 200px;height: 200px;}
-    .content .yazi h1{font-size: 40px;font-family: 'Open Sans', sans-serif;}
-    .content .yazi p{font-size: 20px;font-family: 'Open Sans', sans-serif;}
-    hr{margin: 10px;}
-
-    .iletisim{height: auto;}
-    .hakkinda{height:auto;}
-
-    .sss{margin-top: 30px;height: auto;margin-bottom: 30px;}
-
-    .-two{font-size: 16px;flex-wrap: wrap;height: auto;}
-    .-three{text-align: center;}
-    .politicas{font-size: 11px;}
+@media only screen and (min-width: 6000px){
+    .content{height: 500px;font-size: 100px;}
+    .content h5{font-size: 75px}
+    .component h3{font-size: 100px;}
+    .component input{width: 800px;height: 200px;font-size: 70px;}
+    button{width: 800px;height: 200px;font-size: 60px;}
+    .sonuc h2{font-size: 100px;}
+    .sonuc #sonuc{font-size: 90px;}
 }

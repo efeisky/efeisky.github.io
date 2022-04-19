@@ -1,157 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Modern Tasarım</title>
+    <title>Matematik Proje Ödevi</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <link rel="shortcut icon" href="img/jAkCW1Q8_400x400-removebg-preview.png"/>
+    <script>
+		function Hesapla()
+		{
+			var k1=Number(document.getElementById("sayi1").value);
+			var k2=Number(document.getElementById("sayi2").value);
+			var hipotenus=Math.sqrt((k1*k1)+(k2*k2));
+			document.getElementById("sonuc").innerHTML=hipotenus;
+		}
+		
+		var hesapBtn=document.getElementById("btn");
+		hesapBtn.onclick=Hesapla;
+    </script>
 </head>
 <body>
-    <div class="entry-part">
-        <img src="img/d4_tt_logo_rgbnew_636770283692605897.png">
-        <div class="component">
-            <a class="--tk" href="#bizkimiz">Biz Kimiz?</a>
-            <a class="--tk" href="#iletisim">İletişim</a>
-            <a class="--tk" href="#hakkında">Hakkında</a>
-            <a class="--tk" href="#sss">SSS</a>
-            <div class="mobil">
-                <input type="checkbox"class="menu" id="acil"></input>
-                <label for="acil" class="acil-pop"><img src="img/menu_white_24dp.svg"></label>
-                <div class="acilir_menu">
-                <div class="baslik">
-                    <h1>THY Teknik A.Ş.</h1>
-                    <input type="checkbox">
-                    <label for="acil"><img src="img/close_white_24dp.svg"></label>
-                </div>
-                <div class="icerik">
-                    <a href="#bizkimiz"><img src="img/arrow_right_white_24dp.svg">Biz Kimiz?</a>
-                    <a href="#iletisim"><img src="img/arrow_right_white_24dp.svg">İletişim</a>
-                    <a href="#hakkında"><img src="img/arrow_right_white_24dp.svg">Hakkında</a>
-                    <a href="#sss"><img src="img/arrow_right_white_24dp.svg">SSS</a>
-                </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="content">
-        <div class="information" id="bizkimiz">
-            <div class="yazi">
-                <h1>Biz Kimiz?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra consectetur urna. Praesent facilisis diam a turpis suscipit iaculis. Sed vestibulum nisi et enim vestibulum, id fermentum sem facilisis. Nullam egestas bibendum scelerisque. Phasellus id finibus massa, sed aliquam est. Aenean quis quam sit amet odio ornare porta. Aenean congue ut ligula eu placerat. Nam vel nunc sit amet metus pellentesque euismod.</p>   
-            </div>
-            <hr>
-            <div class="resim"><img src="img/jAkCW1Q8_400x400-removebg-preview.png"></div>
-        </div>
-        <div class="iletisim" id="iletisim">
-            <div class="yazi">
-                <h1>İletişim</h1>
-
-                <div class="--loc"><img src="img/place_white_24dp.svg">Adres: Türk Hava Yolları Teknik A.Ş. Sabiha Gökçen Uluslararası Havalimanı No:3 E Kapısı 34912 Pendik İstanbul</div>
-                <div class="--tel"><img src="img/phone_white_24dp.svg">Telefon: Türk Hava Yolları Teknik A.Ş. SAW +90 216 585 98 00</div>
-                <div class="--tel"><img src="img/phone_white_24dp.svg">Telefon: Türk Hava Yolları Teknik A.Ş. IST +90 212 463 63 63</div>
-                <div class="--fax"><img src="img/fax_white_24dp.svg">Fax: +90 216 585 98 18</div>
-                
-            </div>
-        </div>
-            <div class="hakkinda" id="hakkında">
-                <div class="yazi">
-                    <h1>Hakkında</h1>
-                
-                    <h2>Vizyonumuz</h2>
-                    <p>Havacılık teknik hizmetleri alanında inovatif çözümler sunarak global ölçekte ilk 3 bakım merkezinden biri olmak.</p>
-
-                    <h2>Misyonumuz</h2>
-                    <p>Havacılık bakım onarım sektöründe ürün çeşitliliği, hizmet kalitesi ve rekabetçi konumu ile yetkinliklerini sürekli geliştirerek sektöre yön vermek.</p>
-
-                    <h2>Politikalarımız</h2>
-                    <p>Suspendisse eu blandit quam, ut bibendum velit. Nulla dapibus suscipit lorem, ac placerat turpis ultricies finibus. Ut condimentum magna at vulputate porttitor. Sed vehicula vehicula ex, at tempor ante egestas nec. Proin tristique imperdiet purus at cursus. Morbi quis odio eget nibh pretium tincidunt. Nullam molestie sapien non dolor fringilla, eu sagittis tortor lobortis. Suspendisse potenti. Vivamus ac nisl tellus. In hac habitasse platea dictumst.</p>
-                </div>
-            </div>
-            <div class="sss" id="sss">
-                <div class="yazi">
-                    <h1>S.S.S. (Sıkça Sorulan Sorular)</h1>
-
-                    <p>Phasellus in magna vitae tortor tempor fringilla. Morbi interdum quis felis sit amet tincidunt. Etiam sodales diam malesuada feugiat facilisis. Nam in velit at nisi volutpat blandit. In augue urna, lacinia ac volutpat sed, ultricies non purus. Curabitur vitae dolor id nunc lobortis tristique non quis arcu. Ut bibendum tempor metus et ultrices. In hac habitasse platea dictumst. Curabitur faucibus libero at orci malesuada consequat. Nullam quam diam, molestie sed ligula porta, efficitur efficitur nunc.
-                    Fusce sit amet sollicitudin justo, in posuere libero. Ut consectetur dolor a augue auctor sodales. Suspendisse auctor nec nisl sed sagittis. Aliquam ac enim sed neque vestibulum ullamcorper gravida id massa. Nullam venenatis est nisl, sed commodo dolor fringilla vitae. Sed fringilla elit eget velit interdum, placerat lacinia enim dictum. Nunc tincidunt dapibus orci vel fringilla. Duis condimentum risus sit amet ex hendrerit blandit. Morbi hendrerit imperdiet leo, a dignissim mauris imperdiet eu. Nunc neque tortor, cursus in ante nec, auctor aliquam neque. Nunc sagittis fermentum justo, quis convallis felis lacinia vel. Duis in aliquet lorem, ut viverra ipsum. Mauris eu libero id sapien malesuada dapibus ut eu elit. Aenean vulputate lorem diam.</p>
-                </div>
-            </div>
-            <div class="foot">
-                <div class="-one">
-                    <div class="social">
-                        <a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook-f.svg"></a>
-                        <a href="https://www.twitter.com/" target="_blank"><img src="img/icons8-twitter.svg"></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg"></a>
-                        <a href="https://www.youtube.com/" target="_blank"><img src="img/icons8-youtube.svg"></a>
-                    </div>
-                    <h1>Türk Hava Yolları Teknik A.Ş.</h1>
-                    <h3>Telefon: +90 216 585 98 00</h3>
-                </div>
-                <div class="-two">
-                    <ul>
-                        <li class="cont">Hakkımızda</li>
-                        <li>Vizyonumuz - Misyonumuz</li>
-                        <li>Yönetim Kurulu</li>
-                        <li>Tarihçe</li>
-                        <li>Sertifikalar</li>
-                        <li>Finansal Tablolar</li>
-                        <li>Bilgi Toplumu Hizmetleri</li>
-                        <li>Politikamız</li>
-                    </ul>
-                    <ul>
-                        <li class="cont">Hizmetlerimiz</li>
-                        <li>Uçak Bakım</li>
-                        <li>Hat Bakım</li>
-                        <li>NDT</li>
-                        <li>Motor & APU</li>
-                        <li>İniş Takımları</li>
-                        <li>Komponent Pool</li>
-                        <li>Komponent Bakım</li>
-                        <li>Mühendislik Hizmetleri</li>
-                        <li>Tasarım & Üretim Hizmetleri</li>
-                        <li>Eğitim Hizmetleri</li>
-                        <li>Filo Yönetimi</li>
-                    </ul>
-                    <ul>
-                        <li class="cont">Medya Merkezi</li>
-                        <li>Haberler</li>
-                        <li>Duyurular</li>
-                        <li>Logo Arşivi</li>
-                        <li>Basın Arşivi</li>
-                        <li>Fotoğraf Galerisi</li>
-                    </ul>
-                    <ul>
-                        <li class="cont">Kariyer</li>
-                        <li>İnsan Kaynakları</li>
-                        <li>İş İlanları</li>
-                        <li>İşe Alım Süreci</li>
-                        <li>Sosyal Olanaklar</li>
-                        <li>Staj İmkanları</li>
-                        <li>Sıkça Sorulan Sorular</li>
-                    </ul>
-                    <ul>
-                        <li class="cont">İştirakler</li>
-                        <li>TURKISH NACELLE CENTER (TNC)</li>
-                        <li>TURKISH CABIN INTERIOR(TCI)</li>
-                        <li>TURKISH ENGINE CENTER(TEC)</li>
-                        <li>TURKISH SEAT INDUSTRIES (TSI)</li>
-                        <li>CORNEA AERO SYSTEMS</li>
-                    </ul>
-                    <ul>
-                        <li class="cont">İletişim</li>
-                        <li>Satış ve Pazarlama</li>
-                        <li>Müşteri İlişkileri</li>
-                        <li>Satın Alma</li>
-                        <li>Basın İletişim</li>
-                    </ul>
-                </div>
-                <div class="-three">
-                    <div class="copy"><b>Turkish Technic Inc.</b><span> Copyright © 2018</span></div>
-                    <div class="politicas">| Gizlilik Politikası | Kullanım Koşulları | Kişisel Verilerin Korunması |</div>
-                </div>
-            </div>
+        <h1>Matematik Proje Ödevi :: Pisagor Teoremi</h1>
+        <h5>( Efe Işık 9/F 457 )</h5>
     </div>
-<div class="gecersiz">Ekran Genişliği 765px ve altı olduğu için site engellenmiştir.Lütfen ekran boyutu daha büyük olan bir cihazdan giriniz.</div>
+    <div class="component">
+        <h3>Pisagor Ölçüm Cetveline göre üçgenin 1. kenar uzunluğunu gir</h3>
+        <div class="kenar_1"><input type="text" placeholder="cm cinsinden giriniz" id="sayi1" required></div>
+
+        <h3>Pisagor Ölçüm Cetveline göre üçgenin 2. kenar uzunluğunu gir</h3>
+        <div class="kenar_2"><input type="text" placeholder="cm cinsinden giriniz" id="sayi2" required></div>
+        
+        <div class="buton"><button onclick="Hesapla()" value="YAP">Ölçümleri gönder</button></div>
+        <div class="sonuc">
+            <h2>Hesaplamalara göre Üçgenin hipotenüs uzunluğu: </h2>
+            <div id="sonuc"></div>
+        </div>
+
+    </div>
 </body>
 </html>
