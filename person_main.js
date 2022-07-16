@@ -15,7 +15,9 @@ var arge_yonetim = document.querySelectorAll(".uyg-bilgi")
 
 let deleteBtns;
 let editBtns;
+
 var merkez_secim;
+
 
 veri_gir.addEventListener("click",function(){
 
@@ -450,7 +452,7 @@ function yazma(todo){
         replace.textContent = "Değiştir"
         replace.setAttribute("class","replace")
     }
-    var table = document.querySelector("tbody")
+    var table = document.querySelector("table")
     var tr_kisi = document.createElement("tr")
     table.appendChild(tr_kisi)
     tr_kisi.setAttribute("id","person")
@@ -470,7 +472,7 @@ function yazma(todo){
     tr_kisi.appendChild(td_kanun)
 
     td_merkez.textContent = todo.merkez
-    td_gorev.textContent = todo.alan
+    td_gorev.textContent = todo.alan + " " + todo.isim
     td_basla.textContent = todo.baslangıc_tarih
     td_bitis.textContent = todo.bitis_tarih
     td_sure.textContent = todo.sure
