@@ -41,7 +41,7 @@ function togglePass(){
     sifre_login.type = sifre_login.type == "password" ? "text" : "password";
 }
 
-if(window.location.href == "http://127.0.0.1:5500/register.html"){
+if(window.location.href == "https://efeisky.github.io/register.html"){
 
     result.style.display = "none"
     uyusma.style.display = "none"
@@ -132,7 +132,7 @@ if(window.location.href == "http://127.0.0.1:5500/register.html"){
     }
 
     
-}else if(window.location.href == "http://127.0.0.1:5500/login.html"){
+}else if(window.location.href == "https://efeisky.github.io/login.html"){
     hata.style.display = "none"
     console.log("logindeyiz")
     giris_buton.addEventListener("click",login) 
@@ -177,7 +177,7 @@ if(window.location.href == "http://127.0.0.1:5500/register.html"){
         }
 
     }
-}else if(window.location.href == "http://127.0.0.1:5500/person_main.html"){
+}else if(window.location.href == "https://efeisky.github.io/person_main.html"){
     var nameland = document.querySelector("#name-surname")
     var ismi = localStorage.getItem('isimler');
     var soyismi = localStorage.getItem('soyisimler');
