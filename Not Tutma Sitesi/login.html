@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--Meta Tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-language" content="tr">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="Not Tutma" content="Gündelik bilgileri hatırlatmaya yarayan bir site">
+        <meta name="Author" content="efeisky, isik.efe017@gmail.com"> 
+        <meta name="Copyright" content="Sitenin tüm telif hakları efeisky'ye aittir.">
+        <meta name="rating" content="adult" />
+    
+        <!--Title Tag-->
+        <title>Giriş Yap</title>
+    
+        <!--Link Tag-->
+    
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png">
+            HATIRLATICI Not Defteri
+        </div>
+        <a href="index.html">Anasayfa</a>
+    </div>
+   <div class="content">
+    <div class="login-form">
+        <p id="giris">Giriş Yap</p>
+        <span>Hatırlatıcıda yeni misiniz?  <a href="register.html">Kayıt Ol</a></span>
+        <div class="icerik">
+
+            <div class="email"><input type="email" placeholder="E-Mail" id="email_login"></div>
+
+            <div class="sifre"><input type="password" placeholder="Şifre" id="sifre_login"><img src="img/visibility_FILL0_wght400_GRAD0_opsz40.svg" class="open" onclick="togglePass()"></div>
+
+            <button id="gir">Giriş Yap</button>
+
+            <p id="hata">Şifre veya e-mail adresiniz hatalı</p>
+        </div>
+
+    </div>
+    <img src="img/3918929.jpg" id="yan">
+   </div>
+
+
+    <script src="register-login.js"></script>
+</body>
+</html>

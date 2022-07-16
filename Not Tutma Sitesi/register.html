@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--Meta Tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-language" content="tr">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="Not Tutma" content="Gündelik bilgileri hatırlatmaya yarayan bir site">
+        <meta name="Author" content="efeisky, isik.efe017@gmail.com"> 
+        <meta name="Copyright" content="Sitenin tüm telif hakları efeisky'ye aittir.">
+        <meta name="rating" content="adult" />
+    
+        <!--Title Tag-->
+        <title>Kayıt Ol</title>
+    
+        <!--Link Tag-->
+    
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png">
+            HATIRLATICI Not Defteri
+        </div>
+        <a href="login.html">Giriş Yap</a>
+    </div>
+   <div class="content">
+    <img src="img/Hands holding plastic bottles to throw into trash container.jpg" class="resim">
+    
+    <div class="form">
+
+        <p>Hesap Oluştur</p>
+        <form class="islem">        
+        <div class="genel">
+            <label for="name" class="naml">
+                <input type="text" placeholder="İsim" id="name"required autocomplete="off">
+                <img src="img/done_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+
+            <label for="soyad" class="soyadl">
+                <input type="text" placeholder="Soyisim" id="soyad"required autocomplete="off">
+                <img src="img/done_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+            <label for="kullanıcı" class="emailil">
+                <input type="email"" placeholder="E-Mail" id="email" name="email" required autocomplete="off">
+                <img src="img/done_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+            <label for="sifre" class="sifrel">
+                <input type="password" placeholder="Şifre" id="sifre"required autocomplete="off">
+                <img src="img/done_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+            <label for="sifre_t" class="sifre_tel">
+                <input type="password" placeholder="Şifrenizi tekrarlayın" id="sifre_t"required autocomplete="off">
+                <img src="img/done_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+            <p id="uyusma">Şifreler uyuşmuyor veya geçerli email girdiğinizden emin olunuz.</p>
+
+        </div>
+
+        <div class="age">
+            <input type="checkbox"id="age" required>
+            <label for="age" >En az 13 yaşında olduğumu veya ikamet ettiğim ülkenin kanunlarında belirtilen asgari yaş sınırına ulaştığımı onaylıyorum.</label>
+        </div>
+    </form>
+    <div class="end">
+        <button id="register">Hesap Oluştur</button>
+        <label>Devam ederek Kullanım Koşullarını ve Gizlilik Politikasını kabul etmiş olursunuz.</label>
+    </div>
+
+    </div>
+   </div> 
+    
+   <div class="sonuc">
+    <img src="img/icons8-info.svg">
+    <p>Üye girişi başarıyla sonuçlandırıldı.</p>
+    <button id="yonlen">Tamam</button>
+   </div>
+
+    <script src="register-login.js"></script>
+</body>
+</html>

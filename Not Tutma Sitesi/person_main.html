@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--Meta Tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-language" content="tr">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="Not Tutma" content="Gündelik bilgileri hatırlatmaya yarayan bir site">
+        <meta name="Author" content="efeisky, isik.efe017@gmail.com"> 
+        <meta name="Copyright" content="Sitenin tüm telif hakları efeisky'ye aittir.">
+        <meta name="rating" content="adult" />
+    
+        <!--Title Tag-->
+        <title>Hoş Geldin | Ana Sayfa</title>
+    
+        <!--Link Tag-->
+    
+        <link rel="stylesheet" href="person_main.css">
+        <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="head"><span id="name-surname">Geçersiz Kimlik Doğrulaması (no.504..error)</span></div>
+
+    <div class="left">
+        <p>Kişisel Yönetim Ekranı</p>
+        <div></div>
+        <div class="links">
+            <a href="#islem">Veri Giriş</a>
+            <a href="#ustyonetim">Üst Yönetim</a>
+            <a href="#fakulteyuksek">Fakülte Enstitü Yüksekokulu</a>
+            <a href="#uygulamamer">Uygulama Araştırma Merkezleri</a>
+            <a href="#veriler">Veriler</a>
+        </div>
+        <div class="off"><a href="index.html" id="oturum">Oturumdan Ayrıl<img src="img/icons8-off-91.png"></div></a>
+
+    </div>
+
+    <div class="main">
+        <div id="islem">
+            <div class="baslik">Veri Giriş</div>
+
+            <div class="giris">
+                
+                <div class="info">
+
+                    <label for="merkez">Merkez Seçimi</label>
+                    <input list="merkezler" name="merkez" id="merkez">
+
+                    <datalist id="merkezler">
+                        <option value="------">Üst Yönetim</option>
+                            <option value="Rektörlük">Üst Yönetim<</option>
+                            <option value="Danışmanlar">Üst Yönetim<</option>
+                            <option value="Senato">Üst Yönetim<</option>
+                            <option value="Yönetim Kurulu">Üst Yönetim<</option>
+                            <option value="Yürütme Kurulu">Üst Yönetim<</option>
+                            <option value="Mütevelli">Üst Yönetim<</option>
+                            <option value="------">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="Dekan">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="Bölümler">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="Bölüm Başkanları">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="Fakülte Yönetim Kurulu">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="Fakülte Kurulu">Fakülte Enstitü Yüksekokulu</option>
+                            <option value="------">Uygulama Araştırma Merkezleri</option>
+                            <option value="Müdürler">Uygulama Araştırma Merkezleri</option>
+                            <option value="Uyg. Araştırma Merkezleri Yönetim Kurulu">Uygulama Araştırma Merkezleri</option>
+                            <option value="Danışma Kurulu">Uygulama Araştırma Merkezleri</option>
+                    </datalist>
+
+                </div>
+
+                <div class="info">
+                    <label for="atama_tarihi">Atama Tarihi</label>
+                    <input type="date" id="atama_tarihi">
+                </div>
+
+                <div class="info">
+                    <label for="alan_gorev">Alan Görevi</label>
+                    <input type="text" id="alan_gorev" placeholder="Üye / Rektör Yard.">
+                </div>
+
+                <div class="info">
+                    <label for="atama_bitis_tarihi">Atama Bitiş Tarihi</label>
+                    <input type="date" id="atama_bitis_tarihi">
+                </div>
+
+                <div class="info">
+                    <label for="atama_suresi">Atama Yıl Sayısı</label>
+                    <input type="number" id="atama_suresi">
+                </div>
+
+                <div class="info">
+                    <label for="isim">Unvanı / Adı Soyadı</label>
+                    <input type="text" id="isim">
+                </div>
+
+                <div class="info">
+                    <label for="kanun">İlgili Kanun Maddesi</label>
+                    <input type="text" id="kanun">
+                </div>
+
+
+
+            </div>
+            <button class="info_giris">Bilgileri Gir</button>
+        </div>
+
+        <div class="ara"></div>
+        
+
+        <div class="yapilanma">
+            <div class="baslik">Akademik - İdari Yapılanma</div>
+            <div id="ustyonetim">
+
+                <div class="baslik">Üst Yönetim</div>
+
+                <div class="ust-merkezler">
+                    <div>
+                        <div class="bolum">Rektörlük</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Danışmanlar</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        <ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Senato</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Yönetim Kurulu</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Yürütme Kurulu</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Mütevelli</div>
+                        <ul class="ust-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div id="fakulteyuksek">
+
+                <div class="baslik">Fakülte Enstitü Yüksekokulu</div>
+
+                <div class="yuksek-merkezler">
+                    <div>
+                        <div class="bolum">Dekanlık</div>
+                        <ul class="yuksek-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Bölümler</div>
+                        <ul class="yuksek-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Bölüm Başkanları</div>
+                        <ul class="yuksek-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Fakülte Yönetim Kurulu</div>
+                        <ul class="yuksek-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Fakülte Kurulu</div>
+                        <ul class="yuksek-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="uygulamamer">
+
+                <div class="baslik">Uygulama Araştırma Merkezleri</div>
+
+                <div class="uygulama-merkezler">
+
+                    <div>
+                        <div class="bolum">Müdürler</div>
+                        <ul class="uyg-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Yönetim Kurulu</div>
+                        <ul class="uyg-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="bolum">Danışma Kurulu</div>
+                        <ul class="uyg-bilgi">
+                            <li>Görevi - Adı | Atama Bitiş Tarihi | Kanun Maddesi</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tablo" id="veriler">
+                <table id="EXCEL-tablo">
+                    <caption>Personel Bilgileri</caption>
+                    <thead>
+                      <th>Çalıştığı bölüm</th>  
+                      <th>Görev ve Ad</th>
+                      <th>Sözleşme Başlangıç Tarihi</th>
+                      <th>Sözleşme Bitiş Tarihi</th>
+                      <th>Sözleşme Süresi (yıl)</th>
+                      <th>İlgili Kanun</th>
+                    </thead>
+                    <tr id="person">
+                        <td>Rektörlük</td>
+                        <td>Rektör Yard. efe ışık</td>
+                        <td>15.10.2012</td>
+                        <td>21.12.2017</td>
+                        <td>5</td>
+                        <td>5434</td>
+                    </tr>
+                  </table>
+
+            </div>
+            <p id="yenile">Değişiklikler için sayfayı yenileyin.</p>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="register-login.js"></script>
+    <script src="person_main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

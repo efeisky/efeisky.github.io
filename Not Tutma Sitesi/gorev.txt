@@ -1,0 +1,14 @@
+
+TODO: 
+
+ - Sistem Hataları(register yapma)
+
+ *****
+
+ tüm sayfalara responsive yap
+
+ login + responsive
+ register + responsive
+ index + responsive
+ person + responsive 
+            
