@@ -452,7 +452,7 @@ function yazma(todo){
         replace.textContent = "Değiştir"
         replace.setAttribute("class","replace")
     }
-    var table = document.querySelector("table")
+    var table = document.querySelector("tbody")
     var tr_kisi = document.createElement("tr")
     table.appendChild(tr_kisi)
     tr_kisi.setAttribute("id","person")
